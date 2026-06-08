@@ -1,0 +1,1 @@
+﻿Get-ADComputer -Filter "Enabled -eq 'True'" -Properties msLAPS-EncryptedPassword | Where-Object { $_."msLAPS-EncryptedPassword" -eq $NULL} | Select DNSHostName | Export-Csv -NoType "$PSScriptRoot\LAPS AD Password Missing.csv"

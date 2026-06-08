@@ -1,0 +1,2 @@
+﻿get-aduser -filter * -properties Name,SamAccountName,mail,department,Company,Enabled | Select-Object Name,SamAccountName,mail,department,Company,Enabled |
+Export-csv "$PSScriptRoot\AD-Users.csv" -NoTypeInformation

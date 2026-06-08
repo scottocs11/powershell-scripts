@@ -1,0 +1,1 @@
+﻿Get-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate -Name "updatebranch" | Select-Object updatebranch
